@@ -25,7 +25,7 @@ TextureImporter:
     21300040: run-3
     21300042: run-4
     21300044: run-5
-    21300046: rock-1
+    21300046: rock-3
     21300048: enemy-2
     21300050: enemy-3
     21300052: coin-1
@@ -37,13 +37,13 @@ TextureImporter:
     21300064: coin-7
     21300066: coin-8
     21300068: potion
-    21300070: rock-3
+    21300070: rock-1
     21300072: rock-2
     21300074: background
-    21300076: platform-2
-    21300078: platform-3
+    21300076: platform-m
+    21300078: platform-s
     21300080: floor
-    21300082: platform-1
+    21300082: platform-l
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -577,7 +577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock-1
+      name: rock-3
       rect:
         serializedVersion: 2
         x: 1334
@@ -817,7 +817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock-3
+      name: rock-1
       rect:
         serializedVersion: 2
         x: 1324
@@ -877,7 +877,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platform-2
+      name: platform-m
       rect:
         serializedVersion: 2
         x: 91
@@ -897,7 +897,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platform-3
+      name: platform-s
       rect:
         serializedVersion: 2
         x: 707
@@ -937,7 +937,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platform-1
+      name: platform-l
       rect:
         serializedVersion: 2
         x: 92
