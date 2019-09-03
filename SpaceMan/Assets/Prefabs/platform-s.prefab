@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6252134735502251536}
   - component: {fileID: 8843177549874574028}
-  - component: {fileID: 1662508597306794150}
-  m_Layer: 0
+  - component: {fileID: 7443932001738929938}
+  m_Layer: 8
   m_Name: platform-s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1662508597306794150
+--- !u!61 &7443932001738929938
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +97,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2499998, y: 0.99}
+    oldSize: {x: 2.1666665, y: 0.65999997}
     newSize: {x: 3.2499998, y: 0.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2499998, y: 0.99}
+  m_Size: {x: 2.1666665, y: 0.65999997}
   m_EdgeRadius: 0

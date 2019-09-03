@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1473113684812256521}
   - component: {fileID: 7604818106008858490}
-  - component: {fileID: 7394009656699348316}
-  - component: {fileID: 2962417186148963034}
-  m_Layer: 0
+  - component: {fileID: 4787697910349441925}
+  - component: {fileID: 5690578865668166780}
+  m_Layer: 8
   m_Name: rock-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7394009656699348316
+--- !u!61 &4787697910349441925
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,20 +94,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.085621595, y: -0.30443335}
+  m_Offset: {x: -0.02564764, y: -0.16243863}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.7899998, y: 1.25}
+    oldSize: {x: 1.1933333, y: 0.8333333}
     newSize: {x: 1.7899998, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6187568, y: 0.6411333}
+  m_Size: {x: 0.9539499, y: 0.508456}
   m_EdgeRadius: 0
---- !u!61 &2962417186148963034
+--- !u!61 &5690578865668166780
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,16 +120,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.033296585, y: -0.04281044}
+  m_Offset: {x: -0.021373272, y: -0.038472176}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.7899998, y: 1.25}
+    oldSize: {x: 1.1933333, y: 0.8333333}
     newSize: {x: 1.7899998, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75302315, y: 1.1643782}
+  m_Size: {x: 0.5521288, y: 0.7563889}
   m_EdgeRadius: 0

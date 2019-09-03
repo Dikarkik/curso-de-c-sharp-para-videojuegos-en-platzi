@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8844781735477574327}
   - component: {fileID: 6831558669651790956}
-  - component: {fileID: 4266984092900712447}
-  m_Layer: 0
+  - component: {fileID: 8594848776704253043}
+  m_Layer: 8
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4266984092900712447
+--- !u!61 &8594848776704253043
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +97,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.7899995, y: 1.77}
+    oldSize: {x: 3.86, y: 1.1800001}
     newSize: {x: 5.7899995, y: 1.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7899995, y: 1.77}
+  m_Size: {x: 3.86, y: 1.1800001}
   m_EdgeRadius: 0

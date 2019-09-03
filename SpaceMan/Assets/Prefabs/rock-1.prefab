@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8886786053935629386}
   - component: {fileID: 8518918703822518917}
-  - component: {fileID: 5903618494503750430}
-  m_Layer: 0
+  - component: {fileID: 8133591869557066364}
+  m_Layer: 8
   m_Name: rock-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5903618494503750430
+--- !u!61 &8133591869557066364
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +97,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.91, y: 0.55}
+    oldSize: {x: 0.6066667, y: 0.36666667}
     newSize: {x: 0.91, y: 0.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.91, y: 0.55}
+  m_Size: {x: 0.6066667, y: 0.36666667}
   m_EdgeRadius: 0
