@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     //Variables del movimiento del personaje
     public float jumpForce = 6f;
+    public float runningSpeed = 2f;
     Rigidbody2D rigidBody;
     Animator animator;
     public LayerMask groundMask;
@@ -31,6 +32,24 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(this.transform.position, Vector2.down*1f, Color.green);
 
         animator.SetFloat(VERTICAL_FORCE, rigidBody.velocity.y);
+
+        //Update es recomendado para inputs
+        if (Input.GetAxis("Horizontal") < 0) {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        if (Input.GetAxis("Horizontal") > 0) {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+    }
+
+    void FixedUpdate() {
+        if (rigidBody.velocity.x < runningSpeed) {
+            rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+        }
+
+        //FixedUpdate es recomendado para Physics
+        //Mover el personaje a la izquierda o derecha
+        rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal")*runningSpeed, rigidBody.velocity.y);
     }
 
     void Jump() {
