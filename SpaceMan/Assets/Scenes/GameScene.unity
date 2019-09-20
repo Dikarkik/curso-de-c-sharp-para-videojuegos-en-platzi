@@ -265,6 +265,10 @@ PrefabInstance:
       propertyPath: groundMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 1461936385, guid: 6a900f2640a90cd40b46bd615799cd84, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a900f2640a90cd40b46bd615799cd84, type: 3}
 --- !u!1001 &1926598379
