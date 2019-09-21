@@ -19,16 +19,22 @@ public class GameManager : MonoBehaviour
             sharedInstance = this;
     }
 
-    public void StartGame() {
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.S)) {
+            StartGame();
+        }
+    }
 
+    public void StartGame() {
+        SetGameState(GameState.inGame);
     }
 
     public void GameOver() {
-
+        SetGameState(GameState.gameOver);
     }
 
     public void BackToMenu() {
-
+        SetGameState(GameState.menu);
     }
 
     private void SetGameState(GameState newGameState) {

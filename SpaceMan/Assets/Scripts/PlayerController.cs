@@ -70,10 +70,8 @@ public class PlayerController : MonoBehaviour
                               Vector2.down,
                               1f, //0.2 = cm
                               groundMask)) {
-            //TODO: programar lógica de contacto con el suelo
             return true;
         } else {
-            //TODO: programar lógica de no contacto
             return false;
         }
     }
