@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.S)) {
+        if (Input.GetButtonDown("Submit")) {
             StartGame();
         }
     }

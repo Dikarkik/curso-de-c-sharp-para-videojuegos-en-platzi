@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)){
+        if(Input.GetButtonDown("Jump")){
             Jump();
         }
         animator.SetBool(STATE_ON_THE_GROUND, IsTouchingTheGround());
