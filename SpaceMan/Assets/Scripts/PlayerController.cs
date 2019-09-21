@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController sharedInstance;
+
     //Variables del movimiento del personaje
     public float jumpForce = 6f;
     public float runningSpeed = 2f;
@@ -15,6 +17,9 @@ public class PlayerController : MonoBehaviour
     private const string VERTICAL_FORCE = "verticalForce";
 
     void Awake() {
+        if (sharedInstance == null) 
+            sharedInstance = this;
+
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }

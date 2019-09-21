@@ -10,7 +10,14 @@ public enum GameState {
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager sharedInstance;
+
     public GameState currentGameState = GameState.menu;
+
+    private void Awake() {
+        if (sharedInstance == null)
+            sharedInstance = this;
+    }
 
     public void StartGame() {
 
