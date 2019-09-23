@@ -14,9 +14,15 @@ public class GameManager : MonoBehaviour
 
     public GameState currentGameState = GameState.menu;
 
+    private PlayerController controller;
+
     private void Awake() {
         if (sharedInstance == null)
             sharedInstance = this;
+    }
+
+    void Start() {
+        controller = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     void Update() {
@@ -42,6 +48,7 @@ public class GameManager : MonoBehaviour
             //TODO: colocar la lógica del menú
         } else if (newGameState == GameState.inGame) {
             //TODO: hay que preparar la escena para jugar
+            controller.StartGame();
         } else if (newGameState == GameState.gameOver) {
             //TODO: preparar el juego para el Game Over
         }
