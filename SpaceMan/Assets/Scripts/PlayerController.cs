@@ -30,9 +30,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
-        if(Input.GetButtonDown("Jump")){
-            Jump();
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame) {
+            if (Input.GetButtonDown("Jump")) {
+                Jump();
+            }
         }
+       
         animator.SetBool(STATE_ON_THE_GROUND, IsTouchingTheGround());
         Debug.DrawRay(this.transform.position, Vector2.down*1f, Color.green);
 
@@ -48,13 +51,20 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate() {
-        if (rigidBody.velocity.x < runningSpeed) {
-            rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame) 
+        {
+            if (rigidBody.velocity.x < runningSpeed) 
+            {
+                rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+            } 
+        } else {//Si no estamos dentro de la partida
+            rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         }
+
 
         //FixedUpdate es recomendado para Physics
         //Mover el personaje a la izquierda o derecha
-        rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal")*runningSpeed, rigidBody.velocity.y);
+        //rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal")*runningSpeed, rigidBody.velocity.y);
     }
 
     void Jump() {
@@ -74,5 +84,10 @@ public class PlayerController : MonoBehaviour
         } else {
             return false;
         }
+    }
+
+    public void Die() {
+        this.animator.SetBool(STATE_ALIVE, false);
+        GameManager.sharedInstance.GameOver();
     }
 }
